@@ -11,6 +11,7 @@ body {
 #logo {
     width: 10vw;
     padding: 0.5em;
+    user-select: none;
 }
 
 h1,p {
