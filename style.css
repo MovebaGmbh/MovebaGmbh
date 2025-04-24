@@ -9,9 +9,9 @@ body {
 }
 
 #logo {
-    width: 10vw;
+    width: 8vw;
     padding: 0.5em;
-    user-select: none;
+    margin-top: 1em;
 }
 
 h1,p {
@@ -42,16 +42,177 @@ p {
     justify-content: center;
 }
 
-@media (max-width: 1250px) {
-    #logo {
-        width: 13vw;
-        padding: 0.5em;
+
+/*#umzug {
+    width: 100%;
+    border: 1px solid black;
+    padding: 7vw;
+    margin-top: 7vw
+}
+
+#möbel {
+    width: 100%;
+    border: 1px solid black;
+    padding: 7vw;
+
+}
+
+#umzug p {
+    border: 1px solid red;
+    width: 30vw;
+}
+
+#möbel p{
+    border: 1px solid red;
+    width: 30vw;
+    margin-left: 52.5vw
+}
+
+
+#title {
+    border: 1px solid red;
+    font-size: 40px;
+    margin-left: 10vw;
+}
+
+#title1 {
+    border: 1px solid red;
+    font-size: 40px;
+    margin-left: 60vw;
+}
+
+
+
+*/
+
+#umzug {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+}
+#umzug p {
+    display: flex;
+    width: 40vw;
+}
+
+#title {
+    font-size: 2.25em;
+    width: 40vw;
+    text-align: center;
+}
+
+
+#möbel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+}
+#möbel p {
+    display: flex;
+    width: 40%;
+    text-align: center;
+    margin-left: 50vw;
+}
+
+#title1 {
+    font-size: 2.25em;
+    width: 40%;
+    margin-left: 50vw;
+    text-align: center;
+}
+
+#snd {
+    background-color: rgb(223, 145, 0);
+    color: white
+}
+
+
+#mit {
+    border: 1px solid red;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.714);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 1755px) {
+    #mit {
+        border: 1px solid red;
+        font-size: 1.75em;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0.714);
+        position: fixed;
+        width: 100%;
     }
 }
 
 
-@media (max-width: 1050px) {
 
+@media (max-width: 1250px) {
+    #mit {
+        font-size: 1.5em;
+    }
+    #umzug {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    #umzug p {
+        display: flex;
+        margin-left: -5vw;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #title {
+        font-size: 2.25em;
+        width: 100vw;
+        text-align: center;
+        margin-left: -5vw;
+    }
+    
+    
+    #möbel {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #möbel p {
+        display: flex;
+        margin-left: -5vw;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #title1 {
+        font-size: 2.25em;
+        width: 100vw;
+        text-align: center;
+        margin-left: -5vw;
+    }
+    
+}
+
+
+@media (max-width: 1050px) {
+    #mit {
+        font-size: 1.25em;
+    }
     #content {
         display: flex;
         margin-top: 5vh;
@@ -70,6 +231,9 @@ p {
 
 
 @media (max-width: 800px) {
+    #mit {
+        font-size: 1.25em;
+    }
     #logo {
         width: 23vw;
         padding: 0.5em;
@@ -78,9 +242,18 @@ p {
         display: flex;
         justify-content: center;
     }
+    #umzug p {
+        font-size: 1.25em;
+    }
+    #möbel p {
+        font-size: 1.25em;
+    }
 }
 
 @media (max-width: 500px) {
+    #mit {
+        font-size: 1em;
+    }
     #logo {
         width: 30vw;
     }
