@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Konkhmer Sleokchher' rel='stylesheet'>
+    <title>Moveba GmbH</title>
+</head>
+<body>
+    <div>
+      <div id="navback">
+        <div id="navbar">
+            <a href="#" id="mov">MOVEBA</a>
+            <div id="items">
+                <div class="dropdown">
+                    <a href="#" id="dienst" class="dienst-link">Dienstleistungen</a>
+                    <div class="dropdown-content">
+                        <a href="#Um1">Umzüge</a>
+                        <a href="#entent">Entrümpelung</a>
+                        <a href="#Um2">Möbellieferung</a>
+                        <a href="#Um3">Möbelmontage</a>
+                        <a href="#Um4">Verkehrszeichen</a>
+                    </div>
+                </div>
+                <a href="#kontakt" id="k">Kontakt</a>
+            </div>
+        </div>
+        </div>
+
+        <div id="image-container">
+            <img src="moveba_van_blurred_stronger_1920x1080.png" id="back">
+            <p id="text" class="a">MOVEBA</p>
+            <p id="text2" class="b">Umzüge, Entrümpelungen und weiter</p>
+        </div>
+        <div>
+          <div id="Um1">
+            <div id="Umzüge">
+                <div id="it">
+                    <p id="über">Umzüge</p>
+                    <p id="text1">Stressfrei umziehen mit uns! <br>
+    Wir kümmern uns um alles vom sicheren Transport <br> bis zur schnellen und professionellen Montage. <br>
+    Verlassen Sie sich auf unser erfahrenes Team, das Ihren Umzug effizient und zuverlässig gestaltet.
+    Jetzt anrufen und Angebot sichern!</p>
+                 </div>
+                <img id="car" src="A_vector-based_icon_depicts_a_moving_truck_combine.png" class="slide-in f">
+            </div>
+            </div>
+            <img id="filler" src="bild.png">
+                        <div id="entent">
+            <div id="ent1">
+                <img id="log" src="entrumpelung_icon_weiss.png"  class="slide-in f">
+                <div id="itblack">
+                    <p id="ent" style="color: #D2D2D2">Entrümpelungen</p>
+                    <p id="text3">Mehr Platz, weniger Chaos! Wir übernehmen die <br> schnelle und professionelle Entrümpelung von <br> Wohnung, Keller oder Garage. Effizient, zuverlässig <br>und sauber – für eine sorgenfreie Räumung. Jetzt <br> anrufen und Platz schaffen!</p>
+                 </div>
+
+            </div></div>
+            <div id="Um2">
+            <div id="Umzüge" style="background-color: #1B1B1B; margin-top: 0;">
+                <div id="it">
+                    <p id="über" style="color: #D2D2D2;">Möbellieferung</p>
+                    <p id="text1" style="color: white">Schnelle und zuverlässige Möbellieferung direkt zu <br> Ihnen nach Hause! Wir transportieren Ihre Möbel <br>sicher und pünktlich – ganz bequem bis in Ihre <br>Wohnung. Buchen Sie jetzt und genießen Sie den <br> stressfreien Service!</p>
+                 </div>
+                <img id="car" src="moebellieferung_icon_links.png" class="slide-in slide-right f">
+                
+            </div></div>
+            <img id="filler" src="bild2.png">
+            <div id="Um3">
+            <div id="ent1" style="background-color: white;">
+                <img id="log" src="moebelmontage_icon_transparent.png"  class="slide-in f">
+                <div id="itblack">
+                    <p id="ent" style="color: black">Möbelmontage</p>
+                    <p id="text3" style="color: #585858">Möbelmontage leicht gemacht! Unser erfahrenes <br>Team baut Ihre Möbel schnell und professionell auf,<br> damit Sie sich sofort wohlfühlen können. Jetzt<br> Termin sichern und stressfrei einziehen!</p>
+                 </div>
+
+            </div></div>
+            <div id="Um4">
+            <div id="Umzüge">
+                <div id="it">
+                    <p id="über">Verkehrszeichenaufstelleung</p>
+                    <p id="text1">Möbelmontage leicht gemacht! Unser erfahrenes Team<br> baut Ihre Möbel schnell und professionell auf, damit Sie <br>sich sofort wohlfühlen können. Jetzt Termin sichern und<br> stressfrei einziehen!</p>
+                 </div>
+                <img id="car" src="verkehrszeichen_icon_transparent.png" style="width: 20vw; margin-left: 15vw;" class="slide-in slide-right f">
+            </div></div>
+            <div id="kontakt">
+            <div id="Umzüge" style="background-color: #1B1B1B; margin-top: 0; display: flex; flex-direction: column;">
+                                <p id="über" style="color: #D2D2D2;">Kontaktieren sie uns</p>
+                <div style="display: flex; flex-direction: row;">
+                  <div id="kon">
+                <div id="it" style=" display: flex; justify-content: center;">
+                    <p id="text1" style="color: white;">Geschäftsführer: Yuriy Shishkin <br>
+Stellvertretender Geschäftsführer: Viktor Maier<br> 
+Anschrift: Merseburger Straße 24, 12689 Berlin
+</p>
+                 </div>
+                 </div>
+                                 <p id="text3">Telefonnummer: 0176 41607282 <br>
+Telefonnummer: 0170 8253438 <br>
+Email: info@moveba-gmbh.de</p>
+</div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+     const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
+  
+const dienst = document.querySelector('.dienst-link');
+const dropdown = document.querySelector('.dropdown-content');
+
+dienst.addEventListener('mouseenter', () => {
+  dropdown.style.display = 'flex';
+  dropdown.style.pointerEvents = 'auto';
+});
+
+dienst.addEventListener('mouseleave', () => {
+  // kleine Verzögerung, damit man ins Dropdown wechseln kann ohne zu schließen
+  setTimeout(() => {
+    if (!dropdown.matches(':hover') && !dienst.matches(':hover')) {
+      dropdown.style.display = 'none';
+      dropdown.style.pointerEvents = 'none';
+    }
+  }, 100);
+});
+
+dropdown.addEventListener('mouseenter', () => {
+  dropdown.style.display = 'flex';
+  dropdown.style.pointerEvents = 'auto';
+});
+
+dropdown.addEventListener('mouseleave', () => {
+  dropdown.style.display = 'none';
+  dropdown.style.pointerEvents = 'none';
+});
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navback');
+  if (window.scrollY > 400) {
+    navbar.classList.add('navbar-scrolled');
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+  }
+});
+
+// Schließt das Dropdown-Menü, wenn ein Link darin angeklickt wird (z.B. auf dem Handy)
+document.querySelectorAll('.dropdown-content a').forEach(link => {
+  link.addEventListener('click', () => {
+    dropdown.style.display = 'none';
+    dropdown.style.pointerEvents = 'none';
+  });
+});
+
+
+</script>
+
+</html>

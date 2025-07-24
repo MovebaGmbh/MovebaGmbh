@@ -1,0 +1,400 @@
+* {
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navback {
+    position: fixed;
+    width: 100%;
+    height: 4.5vw;
+    padding: 0;
+    top: 0;
+    z-index: 10000000000000000;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+    top: 0;
+}
+
+
+
+a {
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+    font-family: 'Konkhmer Sleokchher';font-size: 22px;
+    margin-left: 2.5vw;
+    font-size: 1vw;
+}
+
+
+.navbar-scrolled {
+  background-color: #1B1B1B;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#items a{
+    padding: 1vw;
+    color: #ffffff9d;
+}
+
+#items {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 9vw;
+    margin-top: 0.9vh;
+    color: black;
+    z-index: 10000000000;
+}
+
+#items a:hover {
+    color: rgb(255, 255, 255);
+}
+#image-container {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+#back {
+    width: 100%;
+    grid-area: 1 / 1;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+
+
+
+#k {
+    height: fit-content;
+
+}
+
+
+#text,#text2 {
+    grid-area: 1 / 1;
+    color: white;
+    font-family: 'Konkhmer Sleokchher';
+    font-size: 5vw;
+    margin-right: 55vw;
+    margin-bottom: 15.5vw;
+    text-shadow: 10px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#text2 {
+    width: 100%;
+    font-size: 2.5vw;
+    margin-top: 12.5vw;
+    margin-right: -22.5vw;
+    color:#e4e4e4;
+    text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#Umzüge,#ent1 {
+    display: flex;
+    text-align: center;
+        font-family: 'Konkhmer Sleokchher';
+        margin-top: 5vw;
+        padding: 3vw;
+}
+
+#über,#ent{
+    font-size: 2.5vw;
+    width: 100%;
+}
+
+#text1,#text3 {
+    font-size: 1.5vw;
+    width: 50vw;
+    color: #585858;
+    text-align: center;
+}
+
+
+
+#it,#itblack {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+#car {
+    margin-left: 7.5vw;
+    width: 30vw;
+    margin-top: -5vw;
+}
+
+#filler {
+    width: 100vw;
+    height: 20vw;
+    margin-bottom: -1vw;
+}
+
+#itblack {
+    color: white;
+}
+
+#text3 {
+    color: white;
+    text-align: center;
+}
+
+#ent1 {
+    margin:0;
+    padding: 0;
+    background-color: #1B1B1B;
+    padding: 5vw;
+
+}
+
+#log {
+    width: 30vw;
+
+}
+
+#itblack {
+
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(100px); /* Startposition: nach rechts verschoben */
+  transition: all 0.8s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0); /* Endposition */
+}
+
+.slide-left {
+  transform: translateX(-100px);
+}
+
+.slide-right {
+  transform: translateX(100px);
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    height: 50vh;
+    z-index: 10000000;
+}
+
+#mov {
+    margin-left: 1vw;
+    font-size: 1.25vw;
+    position: fixed;
+    top: 0.5vh;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1B1B1B;
+    min-width: 10vw;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    flex-direction: column;
+    left: 3vw;
+    max-height: 50vh; /* max. halbe Bildschirmhöhe */
+    overflow-y: auto;
+    margin-top: 0;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 1vw;
+    display: block;
+    font-size: 1vw;
+    margin-left: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #252525;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+.dienst-link {
+    margin-top: 0vw;
+    display: inline-block; /* wichtig, damit margin wirkt */
+}
+
+@media (max-width: 1600px) {
+    #mov {
+        font-size: 1.5vw;
+    }
+    #items a {
+        font-size: 1.25vw;
+    }
+    #navback {
+        height: 5.25vw;
+    }
+    #items {
+        margin-left: 10vw;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    #mov {
+        font-size: 1.75vw;
+    }
+    #items a {
+        font-size: 1.5vw;
+    }
+    #navback {
+        height: 5.5vw;
+    }
+    #items {
+        margin-left: 11vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    #mov {
+        font-size: 2.25vw;
+    }
+    #items a {
+        font-size: 2vw;
+    }
+    #navback {
+        height: 6.75vw;
+    }
+    #items {
+        margin-left: 14.5vw;
+    }
+        #ent, #über {
+        font-size: 4vw;
+    }
+    #text3, #text1{
+        font-size: 2vw;
+    }
+}
+
+
+@media (max-width: 750px) {
+    #text {
+        font-size: 8vw;
+        margin-left: 46vw;
+    }
+    #text2 {
+        font-size: 4vw;
+    }
+
+
+    #mov {
+        font-size: 4vw;
+        margin-left: 5vw;
+    }
+    #items a {
+        font-size: 3vw;
+    }
+    #navback {
+        height: 10vw;
+    }
+    #items {
+        margin-left: 28vw;
+        margin-top: 1.5vw;
+    }
+
+    #it,#itblack {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+    }
+    .f {
+        display: none;
+    }
+    #ent, #über {
+        font-size: 6vw;
+    }
+    #text3, #text1{
+        font-size: 3.5vw;
+        width: 90vw;
+    }
+    #kon {
+        font-size: 1vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #kon p {
+        max-width: 50vw;
+    }
+}
+
+@media (max-width: 450px) {
+    #back {
+        width: 300vw;
+        height: 100vh;
+        margin-left: -80vw;
+    }
+    #text {
+        font-size: 15vw;
+        margin-left: -60vw;
+        margin-top: -40vw;
+    }
+    #text2 {
+        font-size: 7vw;
+        margin-top: 0vw;
+        margin-left: -141vw;
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    #mov {
+        font-size: 6vw;
+        margin-left: 1vw;
+        padding: 1vw;
+    }
+    #items a {
+        font-size: 4vw;
+        margin-top: 1.75vw;
+        padding: 1vw;
+    }
+        #navback {
+        height: 15vw;
+    }
+    #navbar {
+        margin-left: 5vw;
+    }
+}
