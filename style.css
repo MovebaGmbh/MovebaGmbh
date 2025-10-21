@@ -258,13 +258,12 @@ a {
     font-size: 1.5vw;
 }
 
-.rechts, .links {
+.rechts a,.rechts p, .links {
         color: white;
         font-size: 2vw;
         width: fit-content;
         margin: 0;
 }
-
 @media (max-width: 1600px) {
     #mov {
         font-size: 1.5vw;
@@ -434,4 +433,5 @@ a {
         margin-left: 5vw;
     }
 }
+
 
