@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Konkhmer Sleokchher' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="MovebaLogo.png">
     <title>Moveba GmbH</title>
+    <link rel="icon" type="image/x-icon" href="MovebaLogo.png">
 </head>
 <body>
     <div>
@@ -97,11 +97,14 @@ Anschrift: Merseburger Straße 24, 12689 Berlin
 </p>
                  </div>
                  </div>
-                                 <p id="text3" stlye="color: blue;">Telefonnummer: 0176 41607282 <br>
-Telefonnummer: 0170 8253438 <br>
-Email: info@moveba-gmbh.de <a href="datenschutzerklaerung.html" id="text3" style="color: blue;">Datenschutzerklärung</a></p>
+                 <div style="overflow-y: visible">
+<p id="text3" stlye="color: blue;"><a href="tel:017641607282" onclick="gtag('event', 'phone_click', {'event_category': 'Kontakt', 'event_label': '017641607282'});" class="korrektur">Telefonnummer: 0176 41607282</a> <br>
+<a href="tel:01708253438" onclick="gtag('event', 'phone_click', {'event_category': 'Kontakt', 'event_label': '01708253438'});" class="korrektur">Telefonnummer: 0170 8253438</a><br>
+Email: info@moveba-gmbh.de <a href="datenschutzerklaerung.html" id="text3" style="color: rgb(37, 149, 240);">Datenschutzerklärung</a></p>
+
+</p>
 </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -166,8 +169,7 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
 
 </script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17635905720">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -176,6 +178,5 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
   gtag('config', 'AW-17635905720');
 </script>
 
+
 </html>
-
-
