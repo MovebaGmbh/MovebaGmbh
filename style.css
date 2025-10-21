@@ -1,14 +1,14 @@
 * {
     padding:0;
     margin:0;
-    overflow-x: hidden;
-    
 }
 
 html {
     scroll-behavior: smooth;
 }
-
+html, body {
+    overflow-x: hidden
+}
 #navback {
     position: fixed;
     width: 100%;
@@ -258,6 +258,12 @@ a {
     font-size: 1.5vw;
 }
 
+.rechts, .links {
+        color: white;
+        font-size: 2vw;
+        width: fit-content;
+        margin: 0;
+}
 
 @media (max-width: 1600px) {
     #mov {
@@ -310,8 +316,8 @@ a {
         font-size: 2vw;
     }
     .korrektur {
-    font-size: 2vw;
-}
+        font-size: 2vw;
+    }
 
 }
 
@@ -324,9 +330,7 @@ a {
     #text2 {
         font-size: 4vw;
     }
-    .korrektur {
-    font-size: 4vw;
-    }
+
 
 
     #mov {
@@ -351,6 +355,16 @@ a {
         width: 100vw;
         margin: 0;
     }
+
+
+    .links {
+        width: 50vw !important;
+    }
+
+    .links p, .rechts a, .rechts p {
+        font-size: 3vw !important;
+    }
+
     .f {
         display: none;
     }
@@ -360,6 +374,10 @@ a {
     #text3, #text1{
         font-size: 3.5vw;
         width: 90vw;
+    }
+    #rechts, #links {
+        color: white;
+        font-size: 2vw;
     }
     #kon {
         font-size: 1vw;
@@ -372,6 +390,8 @@ a {
     #kon p {
         max-width: 50vw;
     }
+
+
 }
 
 @media (max-width: 450px) {
