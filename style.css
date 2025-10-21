@@ -254,6 +254,11 @@ a {
     display: inline-block; /* wichtig, damit margin wirkt */
 }
 
+.korrektur {
+    font-size: 1.5vw;
+}
+
+
 @media (max-width: 1600px) {
     #mov {
         font-size: 1.5vw;
@@ -304,6 +309,10 @@ a {
     #text3, #text1{
         font-size: 2vw;
     }
+    .korrektur {
+    font-size: 2vw;
+}
+
 }
 
 
@@ -314,6 +323,9 @@ a {
     }
     #text2 {
         font-size: 4vw;
+    }
+    .korrektur {
+    font-size: 4vw;
     }
 
 
@@ -380,6 +392,10 @@ a {
         max-width: 90vw;
         text-align: center;
     }
+    .korrektur {
+    font-size: 7vw;
+    }
+
 
     #mov {
         font-size: 6vw;
@@ -398,3 +414,4 @@ a {
         margin-left: 5vw;
     }
 }
+
